@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="379.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.viewExampleController6">
+   <children>
+      <Pane layoutX="8.0" layoutY="7.0" prefHeight="363.0" prefWidth="598.0" style="-fx-background-color: #1C1E23;">
+         <children>
+            <Pane layoutX="24.0" layoutY="24.0" prefHeight="183.0" prefWidth="319.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <ImageView fitHeight="176.63" fitWidth="314.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@uncharted-legacy-of-thieves-2400x1350-48ae6d0d3c67.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="49.0" fitWidth="174.0" layoutX="392.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Uncharted%204%20logo.png" />
+               </image>
+            </ImageView>
+            <Line endX="100.0" layoutX="472.0" layoutY="82.0" startX="-100.0" startY="-0.25" stroke="WHITE" strokeWidth="3.0" />
+            <ImageView fitHeight="69.0" fitWidth="57.0" layoutX="381.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Teens%20Logo.png" />
+               </image>
+            </ImageView>
+            <Line endX="100.0" layoutX="471.0" layoutY="175.0" startX="-100.0" startY="-0.25" stroke="WHITE" strokeWidth="3.0" />
+            <Line endX="-100.0" endY="-119.0" layoutX="470.0" layoutY="201.0" startX="-101.121337890625" startY="-26.125" stroke="WHITE" strokeWidth="3.0" />
+            <Line endX="-100.0" endY="-119.0" layoutX="674.0" layoutY="201.0" startX="-101.121337890625" startY="-26.125" stroke="WHITE" strokeWidth="3.0" />
+            <Label layoutX="440.0" layoutY="95.0" text="Teen" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="441.0" layoutY="110.0" text="Violence, Blood, Strong " textFill="#a1a1a1">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="441.0" layoutY="121.0" text="Language" textFill="#a1a1a1">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="10.0" />
+               </font>
+            </Label>
+            <Pane layoutX="368.0" layoutY="181.0" prefHeight="18.0" prefWidth="65.0" style="-fx-background-color: #FFFFFF;" />
+            <Pane layoutX="369.0" layoutY="182.0" prefHeight="16.0" prefWidth="63.0" style="-fx-background-color: #2E2E2E;">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" text="JUEGO BASE" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="9.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="24.0" layoutY="220.0" text="Cuando Sam, el hermano de Drake que se presumía muerto, " textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="233.0" text="regresa en busca de ayuda para salvar su propia vida y tentar " textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="246.0" text="a Drake con una aventura irresistible. En la aventura " textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="259.0" text="más importante de su vida" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Line endX="-44.5" endY="40.0" layoutX="70.0" layoutY="300.0" startX="-44.5" stroke="WHITE" />
+            <Label layoutX="32.0" layoutY="297.0" text="Géneros" textFill="#a1a1a1">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="311.0" text="Acción, Aventura" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Line endX="-44.5" endY="40.0" layoutX="234.0" layoutY="301.0" startX="-44.5" stroke="WHITE" />
+            <Label layoutX="196.0" layoutY="298.0" text="Características" textFill="#a1a1a1">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="196.0" layoutY="312.0" text="Para un solo jugador" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+            </Label>
+            <Pane layoutX="368.0" layoutY="203.0" prefHeight="18.0" prefWidth="88.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Pane layoutX="1.0" layoutY="1.0" prefHeight="16.0" prefWidth="86.0" style="-fx-background-color: #2E2E2E;">
+                     <children>
+                        <Label layoutX="3.0" layoutY="3.0" prefHeight="11.0" prefWidth="96.0" text="EN TU BIBLOTECA" textFill="WHITE">
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="9.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children></Pane>
+            <Button fx:id="Jugar" layoutX="368.0" layoutY="225.0" mnemonicParsing="false" onAction="#Bjugar" prefHeight="30.0" prefWidth="126.0" style="-fx-background-radius: 0; -fx-background-color: #FFFFFF;" text="JUGAR">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="443.0" layoutY="330.0" text="アストロワールドは素晴らし" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="469.0" layoutY="346.0" text="いです、リップスクリュー" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Sans Serif" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="449.0" layoutY="191.0" text="プレデター" textFill="WHITE">
+         <font>
+            <Font name="Microsoft Sans Serif" size="9.0" />
+         </font>
+      </Label>
+      <Line endX="61.0" endY="26.0" layoutX="366.0" layoutY="347.0" startX="61.0" startY="-29.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line endX="234.0" endY="-42.5" layoutX="373.0" layoutY="360.0" startX="55.5" startY="-42.5" stroke="WHITE" strokeWidth="3.0" />
+      <Line endX="61.0" endY="-6.0" layoutX="427.0" layoutY="323.0" startX="61.0" startY="-29.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line endX="174.0" endY="-42.5" layoutX="434.0" layoutY="336.0" startX="55.5" startY="-42.5" stroke="WHITE" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

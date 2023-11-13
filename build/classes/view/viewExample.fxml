@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.viewExampleController">
    <children>
       <Pane layoutX="6.0" layoutY="7.0" prefHeight="263.0" prefWidth="488.0" style="-fx-background-color: #171A21;" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="7.0">
          <children>
@@ -29,20 +29,20 @@
             <Pane layoutX="28.0" layoutY="144.0" prefHeight="50.0" prefWidth="530.0" style="-fx-background-color: #FFFFFF;" />
             <Line endX="492.0" layoutX="98.0" layoutY="260.0" startX="-100.0" stroke="WHITE" strokeWidth="8.0" />
             <Line endX="492.0" layoutX="98.0" layoutY="169.0" startX="-100.0" stroke="WHITE" strokeWidth="8.0" />
-            <TextField layoutX="35.0" layoutY="151.0" prefHeight="37.0" prefWidth="517.0" style="-fx-background-color: #646C76; -fx-text-fill: #FFFFFF; -fx-background-radius: 0;">
+            <TextField fx:id="IngreseUsuario" layoutX="35.0" layoutY="151.0" onKeyTyped="#eventKey" prefHeight="37.0" prefWidth="517.0" style="-fx-background-color: #646C76; -fx-text-fill: #FFFFFF; -fx-background-radius: 0;">
                <font>
                   <Font name="Microsoft Sans Serif" size="15.0" />
                </font>
             </TextField>
             <Pane layoutX="28.0" layoutY="234.0" prefHeight="50.0" prefWidth="530.0" style="-fx-background-color: #FFFFFF;">
                <children>
-                  <PasswordField layoutX="7.0" layoutY="7.0" prefHeight="37.0" prefWidth="517.0" style="-fx-background-color: #646C76; -fx-background-radius: 0; -fx-text-fill: #FFFFFF;">
+                  <PasswordField fx:id="IngreseContraseña" layoutX="7.0" layoutY="7.0" onKeyTyped="#eventKey" prefHeight="37.0" prefWidth="517.0" style="-fx-background-color: #646C76; -fx-background-radius: 0; -fx-text-fill: #FFFFFF;">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </PasswordField>
                </children></Pane>
-            <Label layoutX="28.0" layoutY="125.0" text="INGRERSE CON SU NOMBRE DE USUARIO" textFill="WHITE">
+            <Label layoutX="28.0" layoutY="125.0" text="INGRESE CON SU NOMBRE DE USUARIO" textFill="WHITE">
                <font>
                   <Font name="Microsoft Sans Serif" size="14.0" />
                </font>
@@ -67,7 +67,7 @@
                   <Font name="Microsoft Sans Serif" size="24.0" />
                </font>
             </Label>
-            <Button defaultButton="true" layoutX="191.0" layoutY="304.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="207.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 0;" text="INGRESAR" textFill="#171a21">
+            <Button fx:id="BIngresar" defaultButton="true" layoutX="191.0" layoutY="304.0" mnemonicParsing="false" onAction="#Ingresar" prefHeight="37.0" prefWidth="207.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 0;" text="INGRESAR" textFill="#171a21">
                <font>
                   <Font name="Microsoft Sans Serif" size="17.0" />
                </font>
