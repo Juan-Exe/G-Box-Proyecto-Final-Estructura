@@ -70,7 +70,6 @@ public class viewExampleController implements Initializable {
         String usuario = IngreseUsuario.getText();
         String contrasena = IngreseContraseña.getText();
 
-        // Aquí puedes poner las credenciales correctas para el login
         String usuarioCorrecto = "Ruben_Baena";
         String contrasenaCorrecta = "12345";
 

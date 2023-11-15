@@ -33,6 +33,24 @@ public class Compra {
         }
 
     }
+      public boolean juegoFueComprado(String nombreJuego) {
+    for (Juegos juego : compra) {
+        if (juego.getNombre().equals(nombreJuego)) {
+            return true;
+        }
+    }
+    return false;
+}
+
+public Juegos getJuegoComprado(String nombreJuego) {
+    for (Juegos juego : compra) {
+        if (juego.getNombre().equals(nombreJuego)) {
+            return juego;
+        }
+    }
+    return null;
+}
+
 }
 
 

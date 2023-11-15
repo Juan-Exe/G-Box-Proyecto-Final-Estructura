@@ -96,102 +96,98 @@ public class viewExampleController2 implements Initializable {
      //BOTONES JUEGOS-----------------------------------------------------------
      
      @FXML
-     public void BGodOfWar(ActionEvent event) throws IOException{
-            
-    if (compra.getProductosComprados().isEmpty()) {
-      
+public void BGodOfWar(ActionEvent event) throws IOException {
+    String nombreJuego = "God of War";
+
+    if (compra.juegoFueComprado(nombreJuego)) {
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample4.fxml"));
+    Parent root = loader.load();
+    viewExampleController4 controller4 = loader.getController();
+    Scene scene = new Scene(root);
+    Stage stage = new Stage();
+    stage.setScene(scene);
+    stage.show();
+} else {
     FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample3.fxml"));
     Parent root = loader.load();
-    viewExampleController3 controller = loader.getController();
+    viewExampleController3 controller3 = loader.getController();
     Scene scene = new Scene(root);
     Stage stage = new Stage();
     stage.setScene(scene);
     stage.show();
+}
+}
     
-    } else {
-      
-      FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample4.fxml"));
-    Parent root = loader.load();
-    viewExampleController4 controller = loader.getController();
-    Scene scene = new Scene(root);
-    Stage stage = new Stage();
-    stage.setScene(scene);
-    stage.show();
-   }
-   }
       @FXML
      public void BUncharted(ActionEvent event) throws IOException{
             
-    if (compra.getProductosComprados().isEmpty()) {
-      
+    String nombreJuego = "Uncharted 4";
+
+    if (compra.juegoFueComprado(nombreJuego)) {
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample6.fxml"));
+    Parent root = loader.load();
+    viewExampleController6 controller6 = loader.getController();
+    Scene scene = new Scene(root);
+    Stage stage = new Stage();
+    stage.setScene(scene);
+    stage.show();
+} else {
     FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample5.fxml"));
     Parent root = loader.load();
-    viewExampleController5 controller = loader.getController();
+    viewExampleController5 controller5 = loader.getController();
     Scene scene = new Scene(root);
     Stage stage = new Stage();
     stage.setScene(scene);
     stage.show();
-    
-    } else {
-      
-      FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample6.fxml"));
-    Parent root = loader.load();
-    viewExampleController6 controller = loader.getController();
-    Scene scene = new Scene(root);
-    Stage stage = new Stage();
-    stage.setScene(scene);
-    stage.show();
-   }
-   }
+}
+}
    
     @FXML
     public void BDeadSpace(ActionEvent event) throws IOException{
             
-    if (compra.getProductosComprados().isEmpty()) {
-      
+    String nombreJuego = "Dead Space";
+
+    if (compra.juegoFueComprado(nombreJuego)) {
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample8.fxml"));
+    Parent root = loader.load();
+    viewExampleController8 controller8 = loader.getController();
+    Scene scene = new Scene(root);
+    Stage stage = new Stage();
+    stage.setScene(scene);
+    stage.show();
+} else {
     FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample7.fxml"));
     Parent root = loader.load();
-    viewExampleController7 controller = loader.getController();
+    viewExampleController7 controller7 = loader.getController();
     Scene scene = new Scene(root);
     Stage stage = new Stage();
     stage.setScene(scene);
     stage.show();
-    
-    } else {
-      
-      FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample8.fxml"));
-    Parent root = loader.load();
-    viewExampleController8 controller = loader.getController();
-    Scene scene = new Scene(root);
-    Stage stage = new Stage();
-    stage.setScene(scene);
-    stage.show();
-   }
-   }
+}
+}
     @FXML
     public void Gears5(ActionEvent event) throws IOException{
            
-    if (compra.getProductosComprados().isEmpty()) {
-      
+   String nombreJuego = "Gear 5";
+
+    if (compra.juegoFueComprado(nombreJuego)) {
+    FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample10.fxml"));
+    Parent root = loader.load();
+    viewExampleController10 controller10 = loader.getController();
+    Scene scene = new Scene(root);
+    Stage stage = new Stage();
+    stage.setScene(scene);
+    stage.show();
+} else {
     FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample9.fxml"));
     Parent root = loader.load();
-    viewExampleController9 controller = loader.getController();
+    viewExampleController9 controller9 = loader.getController();
     Scene scene = new Scene(root);
     Stage stage = new Stage();
     stage.setScene(scene);
     stage.show();
-    
-    } else {
-      
-      FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/viewExample10.fxml"));
-    Parent root = loader.load();
-    viewExampleController10 controller = loader.getController();
-    Scene scene = new Scene(root);
-    Stage stage = new Stage();
-    stage.setScene(scene);
-    stage.show();
-   }
-   }  
+}
+}
   
      // FIN TONES JUEGOS--------------------------------------------------------
   
@@ -387,7 +383,7 @@ private void ComprarGears5(ActionEvent event) {
         for (Juegos juego : compra.getProductosComprados()) {
             mensaje.append(juego.getNombre()).append("\n");
         }   
-         JOptionPane.showMessageDialog(null, mensaje.toString(), "Carrito", JOptionPane.INFORMATION_MESSAGE);
+         JOptionPane.showMessageDialog(null, mensaje.toString(), "Biblioteca", JOptionPane.INFORMATION_MESSAGE);
       }
     }
     //FIN VER BIBLIOTECA
